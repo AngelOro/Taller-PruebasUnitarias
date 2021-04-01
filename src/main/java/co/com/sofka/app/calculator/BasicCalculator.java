@@ -29,7 +29,8 @@ public class BasicCalculator {
         logger.info( "Dividing {} / {}", number1, number2 );
         if(number2 == 0){
             logger.info( "División por 0" );
+            return null;
         }
-        return (number2 == 0) ? null : number1 / number2;
+        return number1 / number2;
     }
 }
